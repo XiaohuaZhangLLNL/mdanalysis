@@ -13,13 +13,14 @@ The rules for this file:
   * release numbers follow "Semantic Versioning" http://semver.org
 
 ------------------------------------------------------------------------------
-??/>>/20 orbeckst
+??/??/?? richardjgowers, IAlibay, hmacdope, orbeckst
 
   * 1.0.1
 
 Fixes
   * Development status changed from beta to mature (Issue #2773)
   * pip installation only requests Python 2.7-compatible packages (#2736)
+  * Testsuite does not use any more matplotlib.use('agg') (#2191)
 
 
 
