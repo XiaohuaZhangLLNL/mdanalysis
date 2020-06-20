@@ -14,7 +14,7 @@ The rules for this file:
 
 ------------------------------------------------------------------------------
 ??/??/?? richardjgowers, IAlibay, orbeckst, tylerjereddy, jbarnoud,
-         yuxuanzhuang
+         yuxuanzhuang, lilyminium
 
   * 1.0.1
 
@@ -24,6 +24,8 @@ Fixes
   * Testsuite does not use any more matplotlib.use('agg') (#2191)
   * In ChainReader, read_frame does not trigger change of iterating position.
     (Issue #2723, PR #2815)
+  * empty_atomgroup.select_atoms('name *') now returns an empty
+    AtomGroup instead of TypeError (Issue #2765)
 
 Enhancements
   * Improved performances when parsing TPR files (PR #2804)
