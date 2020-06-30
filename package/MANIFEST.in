@@ -6,7 +6,7 @@ include MDAnalysis/coordinates/xdrfile/src/*
 include MDAnalysis/lib/src/pyqcprot/*
 include MDAnalysis/lib/src/transformations/*
 recursive-include doc * 
-include README INSTALL CHANGELOG LICENSE AUTHORS SUMMARY.txt
+include README INSTALL CHANGELOG LICENSE AUTHORS
 include setup.py
 global-exclude *.pyc
 global-exclude *.pyo
