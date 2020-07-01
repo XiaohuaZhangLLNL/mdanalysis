@@ -16,18 +16,10 @@ MDAnalysis also includes widely used analysis algorithms in the `MDAnalysis.anal
 The MDAnalysis project uses an `open governance model`_ and is fiscally sponsored by `NumFOCUS`_. Consider making 
 a `tax-deductible donation`_ to help the project pay for developer time, professional services, travel, workshops, and a variety of other needs.
 
-.. raw:: html
-
-   <div align="center">
-      <a href="https://numfocus.org/project/mdanalysis">
-         <img height="60px" 
-            src="https://raw.githubusercontent.com/numfocus/templates/master/images/numfocus-logo.png"
-            alt="NumFOCUS Logo"
-            align="center">
-      </a>
-   </div>
-   <br />
-
+.. image:: https://www.mdanalysis.org/public/images/numfocus-sponsored-small.png
+   :alt: NumFOCUS (Fiscally Sponsored Project)
+   :target: https://numfocus.org/project/mdanalysis
+   :align: center
 
 This project is bound by a `Code of Conduct`_.
 
@@ -87,7 +79,7 @@ Please report **bugs** or **enhancement requests** through the `Issue
 Tracker`_. Questions can also be asked on the `user mailing list`_.
 
 If you are a **new developer** who would like to start contributing to
-MDAnalysis get in touch on the `developer mailinglist`_. To set up a
+MDAnalysis get in touch on the `developer mailing list`_. To set up a
 development environment and run the test suite read the `developer
 guide`_.
 
