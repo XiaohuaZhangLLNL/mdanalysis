@@ -82,7 +82,7 @@ matrix:
            SETUP_CMD="sdist"
            BUILD_CMD=""
            INSTALL_HOLE="false"
-           CONDA_DEPENDENCIES="setuptools numpy cython twine"
+           CONDA_DEPENDENCIES="setuptools cython twine"
            PYPI_CHECK="true"
 
     - os: osx
