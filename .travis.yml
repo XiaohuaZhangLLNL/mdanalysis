@@ -74,6 +74,16 @@ matrix:
            PIP_DEPENDENCIES="${PIP_DEPENDENCIES} setuptools<45.0.0"
            ASV_CHECK="true"
 
+    - env: NAME="pypi check"
+           PYTHON_VERSION=3.7
+           CODECOV="false"
+           MAIN_CMD="twine check `ls -t1 ${TRAVIS_BUILD_DIR}/package/dist/MDAnalysis-*.tar.gz | head -n 1`"
+           SETUP_CMD=""
+           BUILD_CMD="cd ${TRAVIS_BUILD_DIR}/package && python setup.py sdist"
+           INSTALL_HOLE="false"
+           CONDA_DEPENDENCIES=""
+           PIP_DEPENDENCIES="setuptools numpy cython twine"
+
     - os: osx
       env: PYTHON_VERSION=3.6
            NUMPY_VERSION=1.17.3
