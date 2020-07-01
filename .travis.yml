@@ -77,12 +77,12 @@ matrix:
     - env: NAME="pypi check"
            PYTHON_VERSION=3.7
            CODECOV="false"
-           MAIN_CMD="twine check `ls -t1 ${TRAVIS_BUILD_DIR}/package/dist/MDAnalysis-*.tar.gz | head -n 1`"
-           SETUP_CMD=""
-           BUILD_CMD="cd ${TRAVIS_BUILD_DIR}/package && python setup.py sdist"
+           MAIN_CMD="cd package && python setup.py"
+           SETUP_CMD="sdist"
+           BUILD_CMD=""
            INSTALL_HOLE="false"
-           CONDA_DEPENDENCIES=""
-           PIP_DEPENDENCIES="setuptools numpy cython twine"
+           CONDA_DEPENDENCIES="setuptools numpy cython twine"
+	   PYPI_CHECK="true"
 
     - os: osx
       env: PYTHON_VERSION=3.6
@@ -134,7 +134,14 @@ script:
       cd ../benchmarks
       time python -m asv check -E existing
     fi
-
+  # check pypi package build
+  - |
+    if [[ "${PYPI_CHECK}" == "true" ]]; then
+       DISTRIBUTION=$(ls -t1 ${TRAVIS_BUILD_DIR}/package/dist/MDAnalysis-*.tar.gz | head -n 1)
+       test -n "${DISTRIBUTION}" || { echo "no distribution package/dist/MDAnalysis-*.tar.gz found"; exit 1; }
+       echo "twine check $DISTRIBUTION"
+       twine check $DISTRIBUTION
+    fi
 
 after_success:
   - |
