@@ -83,7 +83,7 @@ matrix:
            BUILD_CMD=""
            INSTALL_HOLE="false"
            CONDA_DEPENDENCIES="setuptools numpy cython twine"
-	   PYPI_CHECK="true"
+           PYPI_CHECK="true"
 
     - os: osx
       env: PYTHON_VERSION=3.6
