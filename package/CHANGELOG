@@ -13,7 +13,7 @@ The rules for this file:
   * release numbers follow "Semantic Versioning" http://semver.org
 
 ------------------------------------------------------------------------------
-??/??/?? richardjgowers, IAlibay, orbeckst, tylerjereddy
+??/??/?? richardjgowers, IAlibay, orbeckst, tylerjereddy, jbarnoud
 
   * 1.0.1
 
@@ -22,6 +22,8 @@ Fixes
   * pip installation only requests Python 2.7-compatible packages (#2736)
   * Testsuite does not use any more matplotlib.use('agg') (#2191)
 
+Enhancements
+  * Improved performances when parsing TPR files (PR #2804)
 
 
 06/09/20 richardjgowers, kain88-de, lilyminium, p-j-smith, bdice, joaomcteixeira,
@@ -229,7 +231,7 @@ Deprecations
   * Writer.write_next_timestep is deprecated, use write() instead (remove in 2.0)
   * Writer.write(Timestep) is deprecated, use either a Universe or AtomGroup
 
->>>>>>> develop
+
 09/05/19 IAlibay, richardjgowers
 
   * 0.20.1
