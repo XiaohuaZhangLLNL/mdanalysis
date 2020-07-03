@@ -832,7 +832,7 @@ class Universe(object):
                 errmsg = (
                     "Unrecognised topology attribute name: '{}'."
                     "  Possible values: '{}'\n"
-                    "To raise an issue go to: http://issues.mdanalysis.org"
+                    "To raise an issue go to: https://github.com/MDAnalysis/mdanalysis/issues"
                     "".format(
                         topologyattr, ', '.join(sorted(_TOPOLOGY_ATTRS.keys()))))
                 raise ValueError(errmsg) from None
