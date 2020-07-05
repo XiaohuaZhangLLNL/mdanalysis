@@ -26,7 +26,7 @@ Fixes
   * TOPParser no longer guesses elements when missing atomic number records
     (Issues #2449, #2651)
   * Testsuite does not any more matplotlib.use('agg') (#2191)
-  * In ChainReader, read_frame does not trigger change of iterating position. 
+  * In ChainReader, read_frame does not trigger change of iterating position.
     (Issue #2723, PR #2815)
 
 Enhancements
@@ -39,6 +39,8 @@ Enhancements
   * Added computation of Mean Squared Displacements (#2438, PR #2619)
   * Improved performances when parsing TPR files (PR #2804)
   * Added converter between Cartesian and Bond-Angle-Torsion coordinates (PR #2668)
+  * Improved performance of select_atoms on strings (e.g. name, type, resname) and
+    'protein' selection (#2751 PR #2755)
 
 Changes
   * Changes development status from Beta to Mature (Issue #2773)
