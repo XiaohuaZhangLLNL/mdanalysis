@@ -26,6 +26,9 @@ Fixes
     (Issue #2723, PR #2815)
   * empty_atomgroup.select_atoms('name *') now returns an empty
     AtomGroup instead of TypeError (Issue #2765)
+  * TRZReader now checks `n_atoms` on reading. (Issue #2817, PR #2820)
+  * TRZWriter now writes `n_atoms` to the file. (Issue #2817, PR #2820)
+
 
 Enhancements
   * Improved performances when parsing TPR files (PR #2804)
