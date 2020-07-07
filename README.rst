@@ -50,15 +50,17 @@ Example analysis script
 Documentation
 =============
 
-**New users** should read the `Quickstart Guide`_.
+**New users** should read the `Quickstart Guide`_ and might want to
+look at our videos_, in which core developers explain various aspects
+of MDAnalysis.
 
 **All users** should read the `User Guide`_.
 
 **Developers** may also want to refer to the `MDAnalysis API docs`_.
 
-There are a number of tutorials_ on the MDAnalysis homepage that
-explain how to conduct RMSD calculations, structural alignment, and
-many more features of MDAnalysis.
+A growing number of **tutorials_** are available that explain how to
+conduct RMSD calculations, structural alignment, distance and contact
+analysis, and many more.
 
 
 Installation and availability
@@ -125,7 +127,8 @@ For citations of included algorithms and sub-modules please see the references_.
 .. _`Installation Quick Start`:
    https://www.mdanalysis.org/pages/installation_quick_start/
 .. _`MDAnalysis.analysis`: https://docs.mdanalysis.org/documentation_pages/analysis_modules.html
-.. _`tutorials`: https://www.mdanalysis.org/pages/learning_MDAnalysis/
+.. _`tutorials`: https://www.mdanalysis.org/UserGuide/examples/README.html
+.. _`videos`: https://www.mdanalysis.org/pages/learning_MDAnalysis/#videos
 .. _`Quickstart Guide`:
    https://userguide.mdanalysis.org/examples/quickstart.html
 .. _`User Guide`: https://userguide.mdanalysis.org

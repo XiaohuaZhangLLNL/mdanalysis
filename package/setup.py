@@ -515,6 +515,7 @@ def dynamic_author_list():
                                     for name in authors)
         print(template.format(author_string), file=outfile)
 
+
 def long_description(readme):
     """Create reST SUMMARY file for PyPi."""
 
