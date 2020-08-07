@@ -103,7 +103,7 @@ class DDCMDTARReader(base.ReaderBase):
                     count=0
                     for frame in tf:
                         if count == 1:
-                            raise StopIteration
+                            break;
                         if frame.name == self.onesnapshotname:
                             fdata.seek(frame.offset_data)
                             data = fdata.read(frame.size)
