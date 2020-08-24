@@ -45,7 +45,7 @@ class DDCMDReader(base.SingleFrameReaderBase):
                 if idx == 0:  # the first file has header
                     offset=headerDict['offset']
                     f.seek(offset)
-                    print("offset=", offset)
+                    #print("offset=", offset)
 
                 readSuccess=True
                 while readSuccess:
@@ -105,7 +105,7 @@ class DDCMDReader(base.SingleFrameReaderBase):
                 if idx == 0:  # the first file has header
                     offset=headerDict['offset']
                     f.seek(offset)
-                    print("offset=", offset)
+                    #print("offset=", offset)
 
                 for line in f:
                     strs = line.split()
